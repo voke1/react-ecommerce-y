@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./UI/example.js",
     "devstart": "set DEBUG=dev && babel-watch ./ui/example.js",
-    "build": "rm -rf dist && mkdir dist && babel src -s -d dist",
+    "build": "rm -rf dist && mkdir dist && babel ./UI -s -d dist",
     "test": " nyc mocha -r @babel/register --recursive UI/test/ --exit -timeout 10000",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
@@ -16,12 +16,7 @@
     "generate-report": "nyc --reporter=lcov --reporter=text-lcov yarn test"
   },
   "dependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/register": "^7.6.2",
-    "assert": "^2.0.0",
-    "babel": "^6.23.0",
+    "@babel/runtime": "^7.5.5",
     "babel-watch": "^7.0.0",
     "chai": "^4.2.0",
     "express": "^4.17.1",
@@ -29,6 +24,11 @@
     "node": "^12.11.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "babel-watch": "^7.0.0",
     "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.0.6",
