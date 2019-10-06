@@ -53,7 +53,7 @@
       "fields": {
         "title": "couch",
         "price": 45000.99,
-        "image": { "fields": { "file": { "url": "./UI/images/product-7.jpeg" } } }
+        "image": { "fields": { "file": { "url": "./UI/images/hero-bcg.jpeg" } } }
       }
     },
     {

@@ -4,5 +4,7 @@
 
 * Click link to view UI: https://voke1.github.io/shopping-cart/
 
+* Website is also deployed on AWS with CI/CD. Click here to view: https://develop.d3dcjc8vk8tuqe.amplifyapp.com
+
 ## Author
 Voke Olomu
